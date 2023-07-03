@@ -26,6 +26,7 @@ function addProduct($productName, $quantity, $price, $imageURL, $category) {
 
 
 
+
 function getProducts($category = null) {
   $conn = connectToDatabase(); // Obtiene la conexión a la base de datos
 

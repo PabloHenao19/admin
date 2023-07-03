@@ -1,6 +1,27 @@
 <?php
 require '../inven/database.php';
 require '../inven/inventory_functions.php';
+require 'vendor/autoload.php';
+
+
+// SDK de Mercado Pago
+require __DIR__ .  '/vendor/autoload.php';
+// Agrega credenciales
+MercadoPago\SDK::setAccessToken('TEST-772990494508429-070315-df7574daec06090d748c173581fce4aa-726901671');
+
+// Crea un objeto de preferencia
+$preference = new MercadoPago\Preference();
+
+// Crea un ítem en la preferencia
+$item = new MercadoPago\Item();
+$item->title = 'Mi producto';
+$item->quantity = 1;
+$item->unit_price = 75; 
+
+
+$preference->items = array($item);
+$preference->save();
+
 
 $productsDama = getProducts('dama');
 
@@ -13,7 +34,7 @@ $productsDama = getProducts('dama');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
     <script src="https://kit.fontawesome.com/17552d8682.js" crossorigin="anonymous"></script>
 </head>
 
@@ -58,11 +79,33 @@ $productsDama = getProducts('dama');
                       <div class="cart-total hidden"> 
                           <h3>TOTAL</h3>
                           <SPAN class="total-pagar">$0</SPAN>
-      
-                      </div>
+                        </div>
                       <p class="cart-empty"></p>
+
+                      <div class="checkout-btn"></div>
+
+                      <script src="https://sdk.mercadopago.com/js/v2"></script>
+
+<script>
+    const mp = new MercadoPago('TEST-1cc34c47-f7e7-4cf0-b153-9f8210fc8706');
+
+    mp.checkout({
+        preference:{
+            id: '<?php echo $preference->id; ?>'
+        }, 
+        render: {
+            container: '.checkout-btn',
+            label: 'pagar'
+        }
+    })
+
+
+</script>
+
+
                   </div>
               </div>
+              
               <!--Esto es el final del carrito-->
                   <li class="nav-menu-item"><a href="general.php" class="nav-menu-link nav-like">Inicio</a></li>
                   <li class="nav-menu-item"><a href="index.php" class="nav-menu-link nav-like">Cuenta</a></li>

@@ -40,7 +40,7 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN</title>
-    <link rel="stylesheet" href="style1.css">    
+    <link rel="stylesheet" href="style2.css">    
 </head>
 <body>
 <header class="header">

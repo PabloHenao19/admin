@@ -10,7 +10,7 @@
  
     
 
-    <link href="style1.css" rel="stylesheet" />
+    <link href="style2.css" rel="stylesheet" />
     <script denfer src="Project1.js" type="module"></script>
     <script src="https://kit.fontawesome.com/17552d8682.js" crossorigin="anonymous"></script>
 

@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html>
 <head>
   <title>Reset Password</title>
-  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="style2.css">
 </head>
 <body>
   <?php if (isset($_SESSION['error'])): ?>

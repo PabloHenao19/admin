@@ -69,7 +69,7 @@ const rowProduct = document.querySelector('.row-product')
 
             allProduct = allProduct.filter ( product => product.title !== title);
 
-            console.log(allProduct)
+    
 
             showHTML();
         }

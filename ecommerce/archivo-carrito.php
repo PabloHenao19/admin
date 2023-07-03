@@ -57,7 +57,7 @@ function mostrarProductos() {
 <html>
 <head>
   <title>Tienda de ropa</title>
-  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="style2.css">
     <script src="https://kit.fontawesome.com/17552d8682.js" crossorigin="anonymous"></script>
 </head>
 <body>
