@@ -59,6 +59,7 @@ const rowProduct = document.querySelector('.row-product')
            showHTML();
         }
     });
+    
 
     rowProduct.addEventListener('click', (e) =>{
         if (e.target.classList.contains ('icon-close')) {
@@ -128,6 +129,7 @@ const rowProduct = document.querySelector('.row-product')
        countProduct.innerText = totalOfproduct; 
 
     };
+
 
 
   
