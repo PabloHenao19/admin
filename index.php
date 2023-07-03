@@ -29,7 +29,7 @@ if (isset($_SESSION['user_id'])) {
 <?php if(!empty($user)): ?>
   <h1>-BIENVENIDO, <?= $user['email']; ?></h1>
   <p>Has ingresado correctamente.</p>
-  <a href='inventory'>Administrar inventario</a>
+  <a href='inven'>Administrar inventario</a>
   <a href="logout.php">Logout</a>
 <?php else: ?>
   <h1>Please Login or Sign Up</h1>

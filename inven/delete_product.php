@@ -2,6 +2,8 @@
 require 'database.php';
 require 'inventory_functions.php';
 
+$conn = connectToDatabase(); // Establecer conexión a la base de datos
+
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
   if (isset($_GET['product_id'])) {
     $productId = $_GET['product_id'];
@@ -43,4 +45,5 @@ function goBack() {
   </ul>
 </body>
 </html>
+
 
