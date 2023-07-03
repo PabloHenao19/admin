@@ -18,7 +18,7 @@
 <body>
   <header class="header">
       <nav class="nav">
-          <a href="Project.html" class="logo nav-like">BEAR FASHION</a>  
+          <a href="general.php" class="logo nav-like">BEAR FASHION</a>  
   
           <!--<form method="GET" action="buscar.php">
             <input type="text" name="query" placeholder="Buscar">
@@ -64,10 +64,10 @@
               </div>
           </div>
           Esto es el final del carrito-->
-              <li class="nav-menu-item"><a href="Project.html" class="nav-menu-link nav-like">Inicio</a></li>
+              <li class="nav-menu-item"><a href="general.php" class="nav-menu-link nav-like">Inicio</a></li>
               <li class="nav-menu-item"><a href="index.php" class="nav-menu-link nav-like">Cuenta</a></li>
-              <li class="nav-menu-item"><a href="Envio.html" class="nav-menu-link nav-like">Envio</a></li>
-              <li class="nav-menu-item"><a href="Contacto.html" class="nav-menu-link nav-like">Contacto</a></li>
+              <li class="nav-menu-item"><a href="envio.php" class="nav-menu-link nav-like">Envio</a></li>
+              <li class="nav-menu-item"><a href="Contacto.php" class="nav-menu-link nav-like">Contacto</a></li>
         </ul>
           </nav> 
           
